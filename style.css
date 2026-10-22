@@ -1,5 +1,14 @@
 @charset "UTF-8";
+
 /* Artzee Stylesheet - Created by t0ld0wl aka Clint Lutz */
 body {
-	text-align:center;
+	text-align: center;
+}
+
+section,
+div {
+	border: 1px solid black;
+	width: auto;
+	margin: 10px;
+	padding: 10px;
 }
