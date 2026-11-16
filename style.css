@@ -1,14 +1,85 @@
 @charset "UTF-8";
 
 /* Artzee Stylesheet - Created by t0ld0wl aka Clint Lutz */
-h1, h2, footer {
+
+nav a:hover {color: blue}
+
+h1, nav {
+  font-family: Georgia, serif;
+}
+
+body {
+  background-image: url("img/art_gallery.png"); 
+  overflow: hidden; 
+  margin: 0;
+}
+
+body > div { 
+  display: flex; 
+  flex-flow: row wrap; 
+}
+
+body > div > header,
+body > div > nav,
+body > div > main,
+body > div > footer { 
+  background: #ccc; 
+  border-radius: 7px; 
+  margin: 5px; 
+  padding: 20px; 
+}
+
+body > div > header { 
+  height: 50px; 
+  flex: 0 1 100%;
+  align-items: center;
+  display: flex;
+}
+
+body > div > nav {
+  flex: 0 1 100%;
+}
+
+body > div > main { 
+  min-height: 300px; 
+  flex: 0 1 100%;
+}
+
+body > div > footer { 
+  height: 20px; 
+  flex: 0 1 100%;
+}
+
+body > div > nav > ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body > div > nav > ul a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#wrapper {
+width: 800px;
+margin: 30px auto;
+padding: 20px;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000;
+box-shadow: 8px 8px 10px 8px #333333;
+}
+
+h2, footer {
 	text-align: center;
 }
 
-section,
-div {
+section, div {
 	border: 1px solid black;
-	width: max-width;
+	width: 80%;
 	margin: 10px auto;
 	padding: 10px;
 }
