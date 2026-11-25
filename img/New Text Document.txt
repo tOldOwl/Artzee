@@ -1,0 +1,7 @@
+
+		<div><img src="img/1864 Hauling a boat ashore - Claude Monet.jpg" alt="Monet"></div>
+		<div><img src="img/1881 Song of the Angels - William Bouguereau.jpg" alt="Bouguereau"></div>
+		<div><img src="img/1888 Starry Night Over the Rhône - Vincent Van Gogh.jpg" alt="Van Gogh"></div>
+		<div><img src="img/1891 Circe Offering the Cup to Ulysses - John Waterhouse.jpg" alt="Waterhouse"></div>
+		<div><img src="img/1925 Pierot Playing the Guitar - Salvador Dali.jpg" alt="Dali"></div>
+		<div><img src="img/1932 Girl before a Mirror - Pablo Picasso.jpg" alt="Picasso"></div>
