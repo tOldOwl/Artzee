@@ -9,26 +9,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
-.container {
-  width: 100%;
+#wrapper > main.container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: max-content;
   gap: 20px;
+  align-items: center;
+  justify-items: center;
 }
 
-.container > div {
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
+.frame {
+  width: 75%;
+  min-width: 0;
+  margin: 0;
+  box-sizing: border-box;
+  aspect-ratio: 3 / 4;
   border: 1px solid #333;
+  padding: 5px;
+  overflow: hidden;
 }
 
-.container > div img {
+.frame.horzt {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.frame img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
 </style>
+
+
 <body>
   <div id="wrapper">
     <header>
@@ -45,12 +60,12 @@
 	</nav>
 
     <main class="container">
-		<div><img src="img/1864 Hauling a boat ashore - Claude Monet.jpg" alt="Monet"></div>
-		<div><img src="img/1881 Song of the Angels - William Bouguereau.jpg" alt="Bouguereau"></div>
-		<div><img src="img/1888 Starry Night Over the Rhône - Vincent Van Gogh.jpg" alt="Van Gogh"></div>
-		<div><img src="img/1891 Circe Offering the Cup to Ulysses - John Waterhouse.jpg" alt="Waterhouse"></div>
-		<div><img src="img/1925 Pierot Playing the Guitar - Salvador Dali.jpg" alt="Dali"></div>
-		<div><img src="img/1932 Girl before a Mirror - Pablo Picasso.jpg" alt="Picasso"></div>
+		<div class="frame horzt"><img src="img/1864 Hauling a boat ashore - Claude Monet.jpg" alt="Monet"></div>
+		<div class="frame"><img src="img/1881 Song of the Angels - William Bouguereau.jpg" alt="Bouguereau"></div>
+		<div class="frame horzt"><img src="img/1888 Starry Night Over the Rhône - Vincent Van Gogh.jpg" alt="Van Gogh"></div>
+		<div class="frame"><img src="img/1891 Circe Offering the Cup to Ulysses - John Waterhouse.jpg" alt="Waterhouse"></div>
+		<div class="frame"><img src="img/1925 Pierot Playing the Guitar - Salvador Dali.jpg" alt="Dali"></div>
+		<div class="frame"><img src="img/1932 Girl before a Mirror - Pablo Picasso.jpg" alt="Picasso"></div>
     </main>
 
     <footer>
